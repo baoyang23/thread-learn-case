@@ -25,3 +25,15 @@ thread-learn-create 是父项目下的一个子项目
 | com.yang.create.ThreadJoinCase            | 使用线程加入Join() appi                  |
 | com.yang.create.ThreadInterruptCase       | 线程中断的使用                           |
 
+
+
+------
+
+thread-learn-safety
+
+| com.yang.safety.BankAccount    | 说明线程干扰的问题;如果去掉synchronized的话,就可以看到很明显的现象 |
+| ------------------------------ | ------------------------------------------------------------ |
+| com.yang.safety.SequenceNumber | ThreadLocal的使用说明                                        |
+|                                |                                                              |
+|                                |                                                              |
+
