@@ -6,6 +6,9 @@
         <module>thread-learn-create</module>
         <module>thread-learn-safety</module>
         <module>thread-learn-atomic</module>
+        <module>thread-learn-dead-lock</module>
+        <module>thread-learn-juc</module>
+        <module>jvm-learn-error</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
