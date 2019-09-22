@@ -5,6 +5,7 @@
     <modules>
         <module>thread-learn-create</module>
         <module>thread-learn-safety</module>
+        <module>thread-learn-synchronized</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
