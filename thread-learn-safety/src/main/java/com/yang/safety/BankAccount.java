@@ -1,5 +1,11 @@
 package com.yang.safety;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Stack;
+import java.util.TreeSet;
+import java.util.concurrent.*;
+
 /**
  *  说明线程干扰的问题
  * @Author: Mu_Yi
@@ -60,6 +66,17 @@ public class BankAccount {
         t1.join();
         t2.join();
         System.out.println(account.getBalance());
+
+      /*  HashMap<String,String> initMap = new HashMap<>();
+        initMap.keySet()*/
+
+        CopyOnWriteArrayList<String> copy = new CopyOnWriteArrayList<>();
+        CopyOnWriteArraySet<String> copySet = new CopyOnWriteArraySet<>();
+        ConcurrentSkipListSet<String> cSet = new ConcurrentSkipListSet<>();
+        ConcurrentHashMap<String,String> cMap = new ConcurrentHashMap<>();
+
+        ArrayBlockingQueue<String> aQueue = new ArrayBlockingQueue<String>(16);
+
     }
 
     static class Depositor implements Runnable{
