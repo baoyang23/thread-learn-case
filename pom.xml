@@ -8,6 +8,7 @@
         <module>thread-learn-synchronized</module>
         <module>thread-learn-list</module>
         <module>thread-learn-pool</module>
+        <module>thread-learn-threadlocal</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
