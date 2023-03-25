@@ -1,7 +1,10 @@
 package com.yang.create;
 
+import sun.nio.ch.ThreadPool;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /***********************************************************************
  *<PRE>
@@ -39,6 +42,7 @@ public class CreateThreadFunctionThree {
         for(int index=0;index < 100;index++){
             Runner runner = new Runner(index);
             service.execute(runner);
+            service.submit(runner);
         }
         service.shutdown();
     }
